@@ -19,9 +19,7 @@ public class ArrayListTest {
                     inköpsLista.add(läggTill());
                     break;
                 case 2:
-                    System.out.println("Vilken produkt vill du ta bort?");
-                    System.out.print("> ");
-                    inköpsLista.remove(myScanner.next().toUpperCase());
+                    inköpsLista.remove(taBort());
                     break;
                 case 3:
                     System.out.println(inköpsLista);
@@ -53,6 +51,14 @@ public class ArrayListTest {
         Scanner myScanner = new Scanner(System.in);
 
         System.out.println("Vilken produkt vill du lägga till?");
+        System.out.print("> ");
+
+        return myScanner.next().toUpperCase();
+    }
+    public static String taBort(){
+        Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("Vilken produkt vill du ta bort?");
         System.out.print("> ");
 
         return myScanner.next().toUpperCase();
