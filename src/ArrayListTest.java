@@ -16,9 +16,7 @@ public class ArrayListTest {
             switch (menyVal) {
 
                 case 1:
-                    System.out.println("Vilken produkt vill du lägga till?");
-                    System.out.print("> ");
-                    inköpsLista.add(myScanner.next().toUpperCase());
+                    inköpsLista.add(läggTill());
                     break;
                 case 2:
                     System.out.println("Vilken produkt vill du ta bort?");
@@ -49,5 +47,14 @@ public class ArrayListTest {
 
         int menyVal = myScanner.nextInt();
         return menyVal;
+    }
+    public static String läggTill(){
+
+        Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("Vilken produkt vill du lägga till?");
+        System.out.print("> ");
+
+        return myScanner.next().toUpperCase();
     }
 }
