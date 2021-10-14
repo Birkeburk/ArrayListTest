@@ -25,8 +25,7 @@ public class ArrayListTest {
                     System.out.println(inköpsLista);
                     break;
                 case 4:
-                    System.out.println("Programmet avslutas");
-                    programRunning = false;
+                    programRunning = avsluta();
                     break;
                 default:
                     System.out.println("Felaktigt menyval");
@@ -62,5 +61,11 @@ public class ArrayListTest {
         System.out.print("> ");
 
         return myScanner.next().toUpperCase();
+    }
+    public static boolean avsluta(){
+
+        System.out.println("Programmet avslutas");
+
+        return false;
     }
 }
