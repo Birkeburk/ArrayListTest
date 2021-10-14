@@ -28,7 +28,7 @@ public class ArrayListTest {
                     programRunning = avsluta();
                     break;
                 default:
-                    System.out.println("Felaktigt menyval");
+                    felaktigtMenyval();
 
             }
         }
@@ -67,5 +67,10 @@ public class ArrayListTest {
         System.out.println("Programmet avslutas");
 
         return false;
+    }
+    public static void felaktigtMenyval(){
+
+        System.out.println("Felaktigt menyval");
+
     }
 }
